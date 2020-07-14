@@ -20,7 +20,7 @@ If we face any troubles on the event system, we will be hosting an alternative Z
 
 ## Getting Help
 
-If you have any questions before, during or after the tutorial, feel free to email [abdelrahman_hosny@brown.edu](mailto:abdelrahman_hosny@brown.edu)
+If you have any questions before, during or after the tutorial, feel free to email [ahosny@openroad.tools](mailto:ahosny@openroad.tools)
 
 ## Prepare Your Environment
 
