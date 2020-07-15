@@ -15,6 +15,8 @@ read_lef "data/NangateOpenCellLibrary.macro.mod.lef"
 read_liberty "data/NangateOpenCellLibrary_typical.lib"
 read_def "data/aes_final.def"
 read_sdc "data/constr.sdc"
+
+set_propagated_clock [all_clocks]
 ```
 
 ### Report Minimum Path Delay
