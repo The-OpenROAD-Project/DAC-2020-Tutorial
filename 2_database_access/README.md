@@ -1,4 +1,4 @@
-[:arrow_backward: Previous: Verify Installation](../1_verify_installation) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Autonomous Flow :arrow_forward:](../3_rtl_to_gds_autonomous_flow)
+[:arrow_backward: Previous: Verify Installation](../1_verify_installation) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Autonomous Flow :arrow_forward:](../3_rtl_to_gds_autonomous_flow)
 
 # Database Access, Features and Tools
 
@@ -356,4 +356,4 @@ In this part, we have got our hands dirty with OpenROAD database model (i.e Open
 
 In the next section, we will run a complete RTL to GDS flow autonomously with a single command.
 
-[:arrow_backward: Previous: Verify Installation](../1_verify_installation) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Autonomous Flow :arrow_forward:](../3_rtl_to_gds_autonomous_flow)
+[:arrow_backward: Previous: Verify Installation](../1_verify_installation) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Autonomous Flow :arrow_forward:](../3_rtl_to_gds_autonomous_flow)
