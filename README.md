@@ -54,7 +54,7 @@ After you download, extract the downloaded file and add it to the PATH environme
 
 ### Test OpenROAD Tools
 From the terminal screen, type in:
-```
+```shell
 $ openroad
 | OpenROAD 0.9.0 bfb1291039
 | This program is licensed under the BSD-3 license. See the LICENSE file for details. 
