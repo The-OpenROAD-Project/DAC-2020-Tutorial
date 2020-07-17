@@ -4,9 +4,17 @@
 
 Contributed by: [Mehdi Saligane](https://github.com/msaligane).
 
+
 In this section, we will build an antenna checker completely in `Tcl`.
 
+![AntennaChecker Flow](img/ACflow.png)
+
+The flow starts with using OpenDB API to build a WireGraph instance, wiregraph is an undirected graph, the nodes in a wiregraph represent points on a metal wire, the edges represent connections in the wire(VIAs, METALs). After the wiregraph is generated, load_antenna_rules method is called to load all layers' antenna factors into ARC, the metal/gate/diffusion areas of each layer and input/ouput gate are calculated by applying BSF to the generated wiregraph. Then antenna ratios are calculated using the areas from the last step and a checking function is run by comparing the ratios calculated and the boundary ratios specified in LEF. This is followed by the last step to write a detail report which shows the PAR/CAR values of each gate and if antenna violations exist there.
+
+
 ### Load Antenna Rules
+
+The method calculates each layer's antenna factors through OpenDB APIs, the data is stored for future use in the checking process.
 
 ```Tcl
 proc load_antenna_rules { } {
@@ -15,6 +23,8 @@ proc load_antenna_rules { } {
 ```
 
 ### Check Antennas
+
+The method loads antenna rules, and then starts the antenna checking process, the output is written into a "antenna.rpt" file under the path specified.
 
 ```Tcl
 proc check_antennas { args } {
@@ -28,7 +38,9 @@ proc check_antennas { args } {
 }
 ```
 
-### Check Net Violations
+### Get available metal length
+
+The method calculates the length of the metal that can be added to a current metal layer, the PAR ratios are kept satisfied.
 
 ```Tcl
 proc get_met_avail_length { args } {
@@ -52,7 +64,13 @@ proc get_met_avail_length { args } {
   }
   antenna_checker::get_met_avail_length
 }
+```
 
+### Check Net Violations
+
+The method reads a net name, then the function antenna_checker::check_net_violation checks if the target net has antenna violations, the function returns 1 if it is true, otherwise return 0
+
+```Tcl
 proc check_net_violation { args } {
   sta::parse_key_args "check_net_violation" args \
   keys {-net_name} \
@@ -72,6 +90,8 @@ proc check_net_violation { args } {
 ```
 
 ### Add Antenna Cell
+
+The method will add a diode to the target iterm of the instance specified, the diode is placed but is not routed, the process requires later legalization of placement.
 
 ```Tcl
 proc add_antenna_cell { net antenna_cell_name sink_inst antenna_inst_name } {
@@ -99,6 +119,12 @@ proc add_antenna_cell { net antenna_cell_name sink_inst antenna_inst_name } {
 
 ### Antenna Fixing
 
+The method removes all fillers in the OpenDB, then it traverses all nets to check antenna violation. If a violation is detected, add_antenna_cell method is called to add diodes to the target instance. The antenna cell name `antenna_cell_name` and the output file name `target_file` need be set in advance.
+
+![AntennaFixing](img/AntFixing.png)
+
+This figure shows where the antenna fixing code is used to add antenna diodes.
+
 ```Tcl
 proc antenna_fixing {} {
 
@@ -110,59 +136,39 @@ proc antenna_fixing {} {
     }
   }
   
-  set antenna_cell_name "ANTENNA3_A9PP84TR_C14"
+  set antenna_cell_name "ANTENNA3"
   
-  set target_file "6_final_with_diodes"
-  
-  set iterate_times 0
+  set target_file "final_with_diodes"
   
   set antenna_node_counts 0
   
-  while { $iterate_times < 1 } {
-  
-    set nets [$block getNets]
-  
-    foreach net $nets {
-      set net_name [$net getConstName]
-      set flag [check_net_violation -net_name $net_name]
-      if {$flag == 0} {
-        continue
-      }
-  
-      if { [$net isSpecial] } {
-        continue
-      }
-  
-      foreach iterm [$net getITerms] {
-        set inst [$iterm getInst]
-  
-        dict set inst_count $inst [expr [dict get $inst_count $inst] + 1]
-  
-        set count [dict get $inst_count $inst]
-  
-        set antenna_inst_name "ANTENNA"
-        append antenna_inst_name "_" [$inst getName] "_" $count
-  
-        if {[catch {add_antenna_cell $net $antenna_cell_name $inst $antenna_inst_name} result] } {
-          puts "adding node failed"
-          continue
-        } else {
-          set antenna_inst [$block findInst $antenna_inst_name]
-          dict set inst_count $antenna_inst 1
-          set antenna_node_counts [expr $antenna_node_counts + 1]
-        }
-  
-        break
-  
-      }
-  
-      if { $antenna_node_counts == 4 } {
-        break
-      }
+  foreach net [$block getNets] {
+    set net_name [$net getConstName]
+    set flag [check_net_violation -net_name $net_name]
+    if {$flag == 0} {
+      continue
     }
   
-    set iterate_times [expr $iterate_times + 1]
+    if { [$net isSpecial] } {
+      continue
+    }
   
+    foreach iterm [$net getITerms] {
+      set inst [$iterm getInst]
+  
+      set antenna_inst_name "ANTENNA"
+      append antenna_inst_name "_" [$inst getName]
+  
+      if {[catch {add_antenna_cell $net $antenna_cell_name $inst $antenna_inst_name} result] } {
+        puts "adding diode failed"
+        continue
+      } else {
+        set antenna_node_counts [expr $antenna_node_counts + 1]
+      }
+  
+      break
+  
+    }
   }
   
   set verilog_file_name "$target_file.v"
@@ -177,17 +183,24 @@ proc antenna_fixing {} {
 ### Putting It All Together
 
 ```Tcl
-read_lef "data/NangateOpenCellLibrary.tech.lef"
-read_lef "data/NangateOpenCellLibrary.macro.mod.lef"
-read_liberty "data/NangateOpenCellLibrary_typical.lib"
-read_def "data/aes_final.def"
-read_sdc "data/constr.sdc"
+read_lef "data/merged_spacing.lef"
+read_def -order_wires "data/sw130_random.def"
 
-set_propagated_clock [all_clocks]
+# load layers' antenna rules into ARC
+load_antenna_rules
+
+# start checking antennas and generate a detail report
+check_antennas -path ./
+
+# calculate the available length that can be added to net54, at route level 1, while keeping the PAR ratios satisfied
+get_met_avail_length -net_name "net51" -route_level 1
+
+# check if net52 has a violation
+set vio [check_net_violation -net_name "net50"]
+puts "this net has violation: $vio"
+
+antenna_fixing
 ```
-
-TODO
-
 
 ## Conclusion
 In this part, we have used OpenROAD `Tcl` interface to build an Antenna Checker and Fixer. This shows how far you can go with the tool using only its `Tcl` interface.
