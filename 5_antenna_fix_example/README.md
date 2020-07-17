@@ -14,7 +14,7 @@ The flow starts with using OpenDB API to build a WireGraph instance, wiregraph i
 
 ### Load Antenna Rules
 
-The method calculates each layer's antenna factors through OpenDB APIs, the data is stored for future use in the checking process.
+The following method calculates each layer's antenna factors through OpenDB APIs, the data is stored for future use in the checking process.
 
 ```Tcl
 proc load_antenna_rules { } {
@@ -24,7 +24,7 @@ proc load_antenna_rules { } {
 
 ### Check Antennas
 
-The method loads antenna rules, and then starts the antenna checking process, the output is written into a "antenna.rpt" file under the path specified.
+The following method loads antenna rules, and then starts the antenna checking process, the output is written into a "antenna.rpt" file under the path specified.
 
 ```Tcl
 proc check_antennas { args } {
@@ -40,7 +40,7 @@ proc check_antennas { args } {
 
 ### Get available metal length
 
-The method calculates the length of the metal that can be added to a current metal layer, the PAR ratios are kept satisfied.
+The following method calculates the length of the metal that can be added to a current metal layer, the PAR ratios are kept satisfied.
 
 ```Tcl
 proc get_met_avail_length { args } {
@@ -68,7 +68,7 @@ proc get_met_avail_length { args } {
 
 ### Check Net Violations
 
-The method reads a net name, then the function antenna_checker::check_net_violation checks if the target net has antenna violations, the function returns 1 if it is true, otherwise return 0
+The following method reads a net name, then the function antenna_checker::check_net_violation checks if the target net has antenna violations, the function returns 1 if it is true, otherwise return 0
 
 ```Tcl
 proc check_net_violation { args } {
@@ -91,7 +91,7 @@ proc check_net_violation { args } {
 
 ### Add Antenna Cell
 
-The method will add a diode to the target iterm of the instance specified, the diode is placed but is not routed, the process requires later legalization of placement.
+The following method will add a diode to the target iterm of the instance specified, the diode is placed but is not routed, the process requires later legalization of placement.
 
 ```Tcl
 proc add_antenna_cell { net antenna_cell_name sink_inst antenna_inst_name } {
@@ -119,7 +119,7 @@ proc add_antenna_cell { net antenna_cell_name sink_inst antenna_inst_name } {
 
 ### Antenna Fixing
 
-The method removes all fillers in the OpenDB, then it traverses all nets to check antenna violation. If a violation is detected, add_antenna_cell method is called to add diodes to the target instance. The antenna cell name `antenna_cell_name` and the output file name `target_file` need be set in advance.
+The following method removes all fillers in the OpenDB, then it traverses all nets to check antenna violation. If a violation is detected, add_antenna_cell method is called to add diodes to the target instance. The antenna cell name `antenna_cell_name` and the output file name `target_file` need be set in advance.
 
 ![AntennaFixing](img/AntFixing.png)
 
