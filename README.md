@@ -90,5 +90,39 @@ OpenROAD Cloud is available at https://cloud.theopenroadproject.org/
 
 At the time of the tutorial, the platform offers OpenROAD flow on Nangate45. Support for Skywater PDK is in progress.
 
+## Citations
+
+If you are using example codes from this repository in your research, we appreciate your citation to the following articles:
+
+```JavaScript
+@inproceedings{9105619,  
+    author={A. {Hosny} and A. B. {Kahng}},  
+    booktitle={2020 33rd International Conference on VLSI Design and 2020 19th International Conference on Embedded Systems (VLSID)},   
+    title={Tutorial: Open-Source EDA and Machine Learning for IC Design: A Live Update},   
+    year={2020},  
+    volume={},  
+    number={},  
+    pages={1-14}
+}
+
+@inproceedings{10.1145/3316781.3326334,
+    author = {Ajayi, Tutu and Chhabria, Vidya A. and Foga\c{c}a, Mateus and Hashemi, Soheil and Hosny, Abdelrahman and Kahng, Andrew B. and Kim, Minsoo and Lee, Jeongsup and Mallappa, Uday and Neseem, Marina and Pradipta, Geraldo and Reda, Sherief and Saligane, Mehdi and Sapatnekar, Sachin S. and Sechen, Carl and Shalan, Mohamed and Swartz, William and Wang, Lutong and Wang, Zhehong and Woo, Mingyu and Xu, Bangqi},
+    title = {Toward an Open-Source Digital Flow: First Learnings from the OpenROAD Project},
+    year = {2019},
+    isbn = {9781450367257},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3316781.3326334},
+    doi = {10.1145/3316781.3326334},
+    booktitle = {Proceedings of the 56th Annual Design Automation Conference 2019},
+    articleno = {76},
+    numpages = {4},
+    location = {Las Vegas, NV, USA},
+    series = {DAC ’19}
+}
+  
+
+```
+
 ## License
 BSD 3-Clause License. See [LICENSE](LICENSE) file.
