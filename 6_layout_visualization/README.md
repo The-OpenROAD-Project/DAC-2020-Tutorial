@@ -1,12 +1,14 @@
 [:arrow_backward: Previous: Antenna Fix Example](../5_antenna_fix_example) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: OpenDB Python API :arrow_forward:](../6_visualizing_using_klayout)
 
-# Visualizing Using KLayout
+# Layout Visualization
+
+## KLayout
 
 In this section, we will use KLayout to visualize OpenROAD flow result.
 
 > :warning: **NOTE** :warning: 
 > OpenROAD is not affiliated with the KLayout project. 
-KLayout is an open-source project released at: https://github.com/KLayout/klayout under GNU General Public License.
+KLayout is an open-source project released at https://github.com/KLayout/klayout under GNU General Public License.
 
 ### Installation
 
@@ -37,11 +39,16 @@ The layout of the final design can be viewed in the main canvas.
 
 On the right-hand side, there are controls to hide/show specific layers. Use your mouse to zoom in and out.
 
-### Other Layout Viewing Options
+## EDA Viewer
 
-You might use a commercial tool to load LEF/DEF files and view the final layout. 
+In this section, we will use EDA Viewer to visualize OpenROAD flow result.
 
-Another open-source rising project that uses [OpenDB](https://github.com/The-OpenROAD-Project/OpenDB) infrastructure is [EDA Viewer](https://edaviewer.com/). It's released at https://github.com/ahmed-agiza/EDAViewer under MIT license and is completely web-based (requires no installation). 
+> :warning: **NOTE** :warning: 
+> Although EDA Viewer uses OpenDB infrastructure, OpenROAD is not affiliated with the EDA Viewer project. EDA Viewer is an open-source project released at https://github.com/ahmed-agiza/EDAViewer under MIT license.
+
+**Access:** https://edaviewer.com
+
+EDA Viewer is a rising project that uses [OpenDB](https://github.com/The-OpenROAD-Project/OpenDB) infrastructure is [EDA Viewer](https://edaviewer.com/). It's released at https://github.com/ahmed-agiza/EDAViewer under MIT license and is completely web-based (requires no installation). 
 
 EDA Viewer uses a [Golang](https://golang.org/) binding to [OpenDB](https://github.com/The-OpenROAD-Project/OpenDB) and draws the layout using [WebGL](https://get.webgl.org/) (high performance rendering). There are instructions to run the tool on a local machine.
 

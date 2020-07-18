@@ -77,7 +77,7 @@ Development dependencies are documented in this Dockerfile: https://github.com/T
 3. [RTL to GDS autonomous flow](3_rtl_to_gds_autonomous_flow)
 4. [Generating reports](4_generating_reports)
 5. [Antenna fix example](5_antenna_fix_example)
-6. [Visualizing using KLayout](6_visualizing_using_klayout)
+6. [Layout Visualization](6_layout_visualization)
 7. [OpenDB Python API](7_opendb_python_api)
 8. [Machine learning example](8_machine_learning_example)
 
