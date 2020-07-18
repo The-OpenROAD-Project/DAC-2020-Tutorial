@@ -1,8 +1,8 @@
-[:arrow_backward: Previous: Generating Reports](../4_generating_reports) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Visualizing using KLayout :arrow_forward:](../6_visualizing_using_klayout/README.md)
+[:arrow_backward: Previous: Generating Reports](../4_generating_reports) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Visualizing using KLayout :arrow_forward:](../6_visualizing_using_klayout)
 
 # Antenna Fix Example
 
-Contributed by: [Mehdi Saligane](https://github.com/msaligane).
+Contributed by: [Mehdi Saligane](https://github.com/msaligane)
 
 
 In this section, we will build an antenna checker completely in `Tcl`.
