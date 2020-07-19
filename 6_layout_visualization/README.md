@@ -1,4 +1,4 @@
-[:arrow_backward: &nbsp; Previous: Antenna Fix Example](../5_antenna_fix_example) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: OpenDB Python API &nbsp; :arrow_forward:](../6_visualizing_using_klayout)
+[:arrow_backward: &nbsp; Previous: Antenna Fix Example](../5_antenna_fix_example) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: OpenDB Python API &nbsp; :arrow_forward:](../7_opendb_python_api)
 
 # Layout Visualization
 
@@ -48,7 +48,7 @@ In this section, we will use EDA Viewer to visualize OpenROAD flow result.
 
 **Access:** https://edaviewer.com
 
-EDA Viewer is a rising project that uses [OpenDB](https://github.com/The-OpenROAD-Project/OpenDB) infrastructure is [EDA Viewer](https://edaviewer.com/). It's released at https://github.com/ahmed-agiza/EDAViewer under MIT license and is completely web-based (requires no installation). 
+EDA Viewer is a rising project that uses [OpenDB](https://github.com/The-OpenROAD-Project/OpenDB) infrastructure. It's released at https://github.com/ahmed-agiza/EDAViewer under MIT license and is completely web-based (requires no installation). 
 
 EDA Viewer uses a [Golang](https://golang.org/) binding to [OpenDB](https://github.com/The-OpenROAD-Project/OpenDB) and draws the layout using [WebGL](https://get.webgl.org/) (high performance rendering). There are instructions to run the tool on a local machine.
 
@@ -60,4 +60,4 @@ In a web browser, go to https://edaviewer.com and load the LEF/DEF file from the
 
 In this section, we have presented free open-source options to visualize the layout resulted from OpenROAD project. 
 
-[:arrow_backward: &nbsp; Previous: Antenna Fix Example](../5_antenna_fix_example) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: OpenDB Python API &nbsp; :arrow_forward:](../6_visualizing_using_klayout)
+[:arrow_backward: &nbsp; Previous: Antenna Fix Example](../5_antenna_fix_example) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: OpenDB Python API &nbsp; :arrow_forward:](../7_opendb_python_api)

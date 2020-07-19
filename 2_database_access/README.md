@@ -30,8 +30,8 @@ Now, open the terminal and let's see how to use these functionalities.
 
 Start by cloning this repository to have access to all the data in one place.
 ```shell
-git clone https://github.com/abdelrahmanhosny/DAC-2020-OpenROAD-Tutorial.git
-cd DAC-2020-OpenROAD-Tutorial
+git clone https://github.com/The-OpenROAD-Project/DAC-2020-Tutorial.git
+cd DAC-2020-Tutorial
 ```
 
 ### Load LEF/DEF
@@ -263,7 +263,7 @@ puts "layer capacitance: [$layer getCapacitance]"
 
 ### DEF Data Access
 
-This time, we want to extract iunformation about the design (i.e. the DEF file). Let's try the below script to get some insights. You can run the below code by executing `openroad data/def_data_access.tcl`.
+This time, we want to extract information about the design (i.e. the DEF file). Let's try the below script to get some insights. You can run the below code by executing `openroad data/def_data_access.tcl`.
 
 ```Tcl
 set db [odb::dbDatabase_create]
@@ -352,7 +352,7 @@ puts "net non default rule: [$net getNonDefaultRule]"
 
 ## Conclusion
 
-In this part, we have got our hands dirty with OpenROAD database model (i.e OpenDB) and tried some fundamental features of reading LEF and DEF files. OpenDB sets at the core of all OpenROAD's functionality and is a vital part of the physical design flow.
+In this part, we have got our hands dirty with OpenROAD database model (i.e OpenDB) and tried some fundamental features of reading LEF and DEF files. OpenDB sits at the core of all OpenROAD's functionality and is a vital part of the physical design flow.
 
 In the next section, we will run a complete RTL to GDS flow autonomously with a single command.
 
