@@ -44,4 +44,4 @@ Now, in order to test that you can run OpenROAD flow with no human in loop, do t
 
 The above should run a default flow of **GCD** on **Nangate45**. If you see any errors, please go back to the [Prepare Your Environment Section](https://github.com/abdelrahmanhosny/DAC-2020-OpenROAD-Tutorial#prepare-your-environment).
 
-[Next: Database access, features and tools :arrow_forward:](../2_database_access)
+[Next: Database access, features and tools &nbsp; :arrow_forward:](../2_database_access)

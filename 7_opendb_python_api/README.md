@@ -1,4 +1,4 @@
-[:arrow_backward: Previous: Layout Visualization](../6_layout_visualization) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Machine Learning Example :arrow_forward:](../8_machine_learning_example)
+[:arrow_backward: &nbsp; Previous: Layout Visualization](../6_layout_visualization) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Machine Learning Example &nbsp; :arrow_forward:](../8_machine_learning_example)
 
 # OpenDB Python API
 
@@ -187,4 +187,4 @@ DGLGraph(num_nodes=326, num_edges=1018,
 
 What can we do with a DGL graph? In the next section, we will look at an example of learning node embeddings to classify graphs.
 
-[:arrow_backward: Previous: Layout Visualization](../6_layout_visualization) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Machine Learning Example :arrow_forward:](../8_machine_learning_example)
+[:arrow_backward: &nbsp; Previous: Layout Visualization](../6_layout_visualization) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Machine Learning Example &nbsp; :arrow_forward:](../8_machine_learning_example)

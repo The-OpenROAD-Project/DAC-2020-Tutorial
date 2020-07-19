@@ -1,4 +1,4 @@
-[:arrow_backward: Previous: Antenna Fix Example](../5_antenna_fix_example) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: OpenDB Python API :arrow_forward:](../6_visualizing_using_klayout)
+[:arrow_backward: &nbsp; Previous: Antenna Fix Example](../5_antenna_fix_example) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: OpenDB Python API &nbsp; :arrow_forward:](../6_visualizing_using_klayout)
 
 # Layout Visualization
 
@@ -60,4 +60,4 @@ In a web browser, go to https://edaviewer.com and load the LEF/DEF file from the
 
 In this section, we have presented free open-source options to visualize the layout resulted from OpenROAD project. 
 
-[:arrow_backward: Previous: Antenna Fix Example](../5_antenna_fix_example) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: OpenDB Python API :arrow_forward:](../6_visualizing_using_klayout)
+[:arrow_backward: &nbsp; Previous: Antenna Fix Example](../5_antenna_fix_example) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: OpenDB Python API &nbsp; :arrow_forward:](../6_visualizing_using_klayout)

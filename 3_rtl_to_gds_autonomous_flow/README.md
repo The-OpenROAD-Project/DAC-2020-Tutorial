@@ -1,4 +1,4 @@
-[:arrow_backward: Previous: Database access, features and tools](../2_database_access) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Generating Reports :arrow_forward:](../4_generating_reports)
+[:arrow_backward: &nbsp; Previous: Database access, features and tools](../2_database_access) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Generating Reports &nbsp; :arrow_forward:](../4_generating_reports)
 
 # RTL to GDS Autonomous Flow
 
@@ -60,4 +60,4 @@ We have also looked into how the flow runs and some of the tools used to complet
 
 In the next section, we will look at the generated reports from the flow.
 
-[:arrow_backward: Previous: Database access, features and tools](../2_database_access) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Generating Reports :arrow_forward:](../4_generating_reports)
+[:arrow_backward: &nbsp; Previous: Database access, features and tools](../2_database_access) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Generating Reports &nbsp; :arrow_forward:](../4_generating_reports)

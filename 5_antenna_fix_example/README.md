@@ -1,4 +1,4 @@
-[:arrow_backward: Previous: Generating Reports](../4_generating_reports) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Layout Visualization :arrow_forward:](../6_layout_visualization)
+[:arrow_backward: &nbsp; Previous: Generating Reports](../4_generating_reports) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Layout Visualization &nbsp; :arrow_forward:](../6_layout_visualization)
 
 # Antenna Fix Example
 
@@ -207,4 +207,4 @@ In this part, we have used OpenROAD `Tcl` interface to build an Antenna Checker 
 
 In the next section, we will give a brief overview on using KLayout for visualization.
 
-[:arrow_backward: Previous: Generating Reports](../4_generating_reports) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Layout Visualization :arrow_forward:](../6_layout_visualization)
+[:arrow_backward: &nbsp; Previous: Generating Reports](../4_generating_reports) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Layout Visualization &nbsp; :arrow_forward:](../6_layout_visualization)

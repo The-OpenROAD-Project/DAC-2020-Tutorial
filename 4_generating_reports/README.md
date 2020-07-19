@@ -1,4 +1,4 @@
-[:arrow_backward: Previous: Autonomous Flow](../3_rtl_to_gds_autonomous_flow) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Antenna Fix Example :arrow_forward:](../5_antenna_fix_example)
+[:arrow_backward: &nbsp; Previous: Autonomous Flow](../3_rtl_to_gds_autonomous_flow) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Antenna Fix Example &nbsp;  :arrow_forward:](../5_antenna_fix_example)
 
 # Generating Reports
 
@@ -62,4 +62,4 @@ In this section, we have shown how to report essential metrics for your design.
 
 In the next section, we will show an example for **Antenna Fixing** using only the Tcl interface of OpenROAD.
 
-[:arrow_backward: Previous: Autonomous Flow](../3_rtl_to_gds_autonomous_flow) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Antenna Fix Example :arrow_forward:](../5_antenna_fix_example)
+[:arrow_backward: &nbsp; Previous: Autonomous Flow](../3_rtl_to_gds_autonomous_flow) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Antenna Fix Example &nbsp; :arrow_forward:](../5_antenna_fix_example)
