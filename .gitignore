@@ -33,3 +33,6 @@
 
 # Misc
 .DS_Store
+.venv
+dac20-ml-example
+output
