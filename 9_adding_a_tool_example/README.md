@@ -4,7 +4,7 @@
 - Please read the [doc/OpenRoadArch.md](https://github.com/The-OpenROAD-Project/OpenROAD/blob/master/doc/OpenRoadArch.md) to understand the requirement. The ClipGraphExtract follows the OpenRoadArch.md manual.
 
 ## ClipGraphExtract Flow
-| <img src="/doc/clique-star-v2.png" width=600px> |
+| <img src="https://github.com/mgwoo/ClipGraphExtract/blob/master/doc/clique-star-v2.png" width=600px> |
 |:--:|
 | Clique and star net decomposition example |
 - In OpenROAD app, read_lef and read_def command will populate the OpenDB's data structure.
