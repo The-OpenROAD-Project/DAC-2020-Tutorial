@@ -1,0 +1,3 @@
+[submodule "9_adding_a_tool_example/ClipGraphExtract"]
+	path = 9_adding_a_tool_example/ClipGraphExtract
+	url = https://github.com/mgwoo/ClipGraphExtract
