@@ -1,4 +1,4 @@
-[:arrow_backward: &nbsp; Previous: OpenDB Python API](../7_opendb_python_api)
+[:arrow_backward: &nbsp; Previous: OpenDB Python API](../7_opendb_python_api) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Adding A Tool to OpenROAD &nbsp; :arrow_forward:](../9_adding_a_tool_example)
 
 # Machine Learning Example
 
@@ -48,4 +48,4 @@ Epochs: 50
 
 This example capitalizes on OpenDB capabilities and show how straightforward it is to start building ML models on OpenDB. There are many enhancements that can (and should) be done in the model. Feel free to fork the code and use it in your project. Please, keep the license header.
 
-[:arrow_backward: &nbsp; Previous: OpenDB Python API](../7_opendb_python_api)
+[:arrow_backward: &nbsp; Previous: OpenDB Python API](../7_opendb_python_api) &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;        [Next: Adding A Tool to OpenROAD &nbsp; :arrow_forward:](../9_adding_a_tool_example)

@@ -80,6 +80,7 @@ Development dependencies are documented in this Dockerfile: https://github.com/T
 6. [Layout Visualization](6_layout_visualization)
 7. [OpenDB Python API](7_opendb_python_api)
 8. [Machine learning example](8_machine_learning_example)
+9. [Adding a tool to OpenROAD](9_adding_a_tool_example)
 
 
 ## OpenROAD Cloud

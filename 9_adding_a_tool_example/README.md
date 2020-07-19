@@ -1,5 +1,10 @@
+[:arrow_backward: &nbsp; Previous: Machine Learning Example](../8_machine_learning_example) 
+
 # ClipGraphExtract
-- An example repo for adding the tool to the top-level app and using an OpenDB-C++ API for DAC 2020 tutorial 9.
+
+Contributed by: [Mingyu Woo](https://github.com/mgwoo)
+
+- An example repo for adding a tool to the top-level app and using an OpenDB-C++ API for.
 - The base sources are copied from [OpenROAD](https://github.com/The-OpenROAD-Project/OpenROAD) repo, commit: [7156dc](https://github.com/The-OpenROAD-Project/OpenROAD/commit/7156dc41b0be75e9090b456103a2a1510913a4d2). Unessential repos are removed to be compiled well in other environments.
 - Please read the [doc/OpenRoadArch.md](https://github.com/The-OpenROAD-Project/OpenROAD/blob/master/doc/OpenRoadArch.md) to understand the requirement. The ClipGraphExtract follows the OpenRoadArch.md manual.
 
@@ -201,3 +206,5 @@
 - BSD-3-Clause license. 
 - Code found under the subdirectory (e.g., src/OpenSTA) have individual copyright and license declarations at each folder.
 
+
+[:arrow_backward: &nbsp; Previous: Machine Learning Example](../8_machine_learning_example) 
