@@ -192,14 +192,16 @@ load_antenna_rules
 # start checking antennas and generate a detail report
 check_antennas -path ./
 
-# calculate the available length that can be added to net54, at route level 1, while keeping the PAR ratios satisfied
+# calculate the available length that can be added to net51, at route level 1, while keeping the PAR ratios satisfied
 get_met_avail_length -net_name "net51" -route_level 1
 
-# check if net52 has a violation
+# check if net50 has a violation
 set vio [check_net_violation -net_name "net50"]
 puts "this net has violation: $vio"
 
-antenna_fixing
+# The antenna_cell_name needs be set in advance
+# antenna_fixing
+
 ```
 
 ## Conclusion
