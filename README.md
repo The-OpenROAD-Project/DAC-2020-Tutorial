@@ -41,10 +41,10 @@ OpenROAD tools only need `Tcl` to be installed.
 To use the full automation features of OpenROAD flow, you need to install:
 * `Python 3`
     * CentOS: `sudo yum install python3`
-    * Ubuntu: `sudo yum install python3`
+    * Ubuntu: `sudo apt install python3`
 * Time
     * CentOS: `sudo yum install time`
-    * Ubuntu: `sudo yum install time`
+    * Ubuntu: `sudo apt install time`
 * KLayout
 Follow instructions here: https://www.klayout.de/build.html
 
