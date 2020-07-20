@@ -199,7 +199,7 @@ get_met_avail_length -net_name "net51" -route_level 1
 set vio [check_net_violation -net_name "net50"]
 puts "this net has violation: $vio"
 
-# The antenna_cell_name needs be set in advance
+# The antenna_cell_name needs be set in advance -- diode is missing in the new sky130 pdk (TBD)
 # antenna_fixing
 
 ```
