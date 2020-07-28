@@ -16,8 +16,6 @@ The live session requires registration to the DAC conference.
 
 To join the session, login to the virtual event platform for DAC, navigate to the agenda and select Monday 1:30PM. Click on the session and join the live meeting. Instructions for signing in to the platform is sent to registrants on the email.
 
-If we face any troubles on the event system, we will be hosting an alternative Zoom link [here](https://brown.zoom.us/j/97979754782?pwd=TnVuZFJ1WTJoMTB0ZlIvU2dQOE5qZz09).
-
 ## Getting Help
 
 If you have any questions before, during or after the tutorial, feel free to email [ahosny@openroad.tools](mailto:ahosny@openroad.tools)
