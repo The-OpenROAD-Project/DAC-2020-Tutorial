@@ -20,4 +20,4 @@ six==1.15.0
 sklearn==0.0
 threadpoolctl==2.1.0
 torch==1.5.1
-urllib3==1.25.9
+urllib3==1.26.5
