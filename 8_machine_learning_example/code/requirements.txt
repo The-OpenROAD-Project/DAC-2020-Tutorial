@@ -5,7 +5,7 @@ decorator==4.4.2
 dgl==0.4.3.post2
 future==0.18.2
 idna==2.10
-joblib==0.16.0
+joblib==1.2.0
 kiwisolver==1.2.0
 matplotlib==3.3.0
 networkx==2.4
